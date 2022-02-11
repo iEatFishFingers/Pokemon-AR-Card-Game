@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "5ed30b6",
         "name": "com.DefaultCompany.VuforiaVersionPokemonAR",
-        "processId": 19428,
+        "processId": 30787,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -11,43 +11,55 @@
         {
             "deviceId": "5ed30b6",
             "name": "com.DefaultCompany.VuforiaVersionPokemonAR",
-            "processId": 9755,
+            "processId": 24929,
             "exited": true
         },
         {
             "deviceId": "5ed30b6",
-            "name": "com.DefaultCompany.VuforiaVersionPokemonAR",
-            "processId": 10345,
-            "exited": true
-        },
-        {
-            "deviceId": "5ed30b6",
-            "name": "com.DefaultCompany.VuforiaVersionPokemonAR",
-            "processId": 10733,
-            "exited": true
-        },
-        {
-            "deviceId": "5ed30b6",
-            "name": "com.DefaultCompany.VuforiaVersionPokemonAR",
-            "processId": 11187,
-            "exited": true
-        },
-        {
-            "deviceId": "5ed30b6",
-            "name": "com.DefaultCompany.VuforiaVersionPokemonAR",
-            "processId": 11872,
+            "name": "com.android.settings",
+            "processId": 25846,
             "exited": false
         },
         {
             "deviceId": "5ed30b6",
             "name": "com.DefaultCompany.VuforiaVersionPokemonAR",
-            "processId": 18762,
+            "processId": 26170,
+            "exited": true
+        },
+        {
+            "deviceId": "5ed30b6",
+            "name": "com.DefaultCompany.VuforiaVersionPokemonAR",
+            "processId": 27225,
+            "exited": true
+        },
+        {
+            "deviceId": "5ed30b6",
+            "name": "com.DefaultCompany.VuforiaVersionPokemonAR",
+            "processId": 27755,
+            "exited": true
+        },
+        {
+            "deviceId": "5ed30b6",
+            "name": "com.DefaultCompany.VuforiaVersionPokemonAR",
+            "processId": 28468,
+            "exited": true
+        },
+        {
+            "deviceId": "5ed30b6",
+            "name": "com.DefaultCompany.VuforiaVersionPokemonAR",
+            "processId": 29941,
             "exited": false
         },
         {
             "deviceId": "5ed30b6",
             "name": "com.DefaultCompany.VuforiaVersionPokemonAR",
-            "processId": 19428,
+            "processId": 30491,
+            "exited": false
+        },
+        {
+            "deviceId": "5ed30b6",
+            "name": "com.DefaultCompany.VuforiaVersionPokemonAR",
+            "processId": 30787,
             "exited": false
         }
     ],

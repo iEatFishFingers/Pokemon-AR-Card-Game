@@ -1,0 +1,926 @@
+fileFormatVersion: 2
+guid: 5d6f60dc52f226940a3580997e4d6435
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: Pokemon Level
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1837
+      y: 676
+      width: 171
+      height: 50
+    spriteID: 0a7f863e0da238440807afafdfea7ad5
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 241, y: 173}
+  - name: Pokemon Name
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1727
+      y: 408
+      width: 309
+      height: 38
+    spriteID: 43f4d32719ceb9645a458f37ce5ecc7d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 591, y: -95}
+  - name: HP
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1945
+      y: 578
+      width: 62
+      height: 29
+    spriteID: 6c15cd7b5fd482e4a973b017a379a6d2
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 671, y: 133}
+  - name: Pokemon Health stat
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1782
+      y: 959
+      width: 259
+      height: 50
+    spriteID: 0842ca740cc5c094387e9f96b22cd530
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 273, y: 579}
+  - name: Player 1 Boarder
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 676
+      width: 724
+      height: 208
+    spriteID: f346964ce39b6bb43978f23abdb921cb
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1091, y: 311}
+  - name: True Hp Bar
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 455
+      y: 1042
+      width: 443
+      height: 19
+    spriteID: 3fb7596d69e0a5748b070cd1e7fbdbb9
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -888, y: 593}
+  - name: Hp Inner White border
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1381
+      y: 858
+      width: 450
+      height: 24
+    spriteID: 713ad3a5330111147b2bb48e7b3a7d5c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 42, y: 412}
+  - name: Hp Black Border
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1405
+      y: 622
+      width: 532
+      height: 36
+    spriteID: 1235a76b8c9110d4e8b90c8fb233342f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 144, y: 181}
+  - name: Pokemon Name_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1727
+      y: 362
+      width: 309
+      height: 38
+    spriteID: b58948ab96b50e94db915c542795d06a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1577, y: -566}
+  - name: Pokemon Level_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1146
+      y: 806
+      width: 172
+      height: 50
+    spriteID: bde305f4790eb5240baf10fa7499a6eb
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 536, y: -122}
+  - name: Pokemon Health stat_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1782
+      y: 892
+      width: 259
+      height: 50
+    spriteID: 5e13e979de734c6419c553d01aead581
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1259, y: 87}
+  - name: HP_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1945
+      y: 622
+      width: 61
+      height: 29
+    spriteID: 7b88b4c48f1189d47b1966c54ddf6c16
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1656, y: -247}
+  - name: Hp Inner White border_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1381
+      y: 826
+      width: 450
+      height: 24
+    spriteID: e02762f952ee920429958d360657da8a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1028, y: -44}
+  - name: True Hp Bar_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1042
+      width: 443
+      height: 19
+    spriteID: decb3874ad0b2aa47865946689255dca
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -353, y: 168}
+  - name: Hp Black Border_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1405
+      y: 578
+      width: 532
+      height: 36
+    spriteID: 99cab60e4a8b99348bcd4f9c0427f347
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1130, y: -287}
+  - name: Player 1 Boarder_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 995
+      y: 362
+      width: 724
+      height: 208
+    spriteID: 194964b6a00d47b478e7c727c9a3f817
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 886, y: -427}
+  - name: text dialog border
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 362
+      width: 1044
+      height: 325
+    spriteID: 5303480c572951e4e96db8b8d615ca16
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 341}
+  - name: Dialog Border
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1919
+      height: 349
+    spriteID: 52703842155a8264fb1f43da46d4bf4a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+  - name: Lorem Ipsum
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 736
+      y: 806
+      width: 402
+      height: 59
+    spriteID: ee90a6d7aa579cc4c89863e5d7442fac
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -753, y: 742}
+  - name: Lorem Ipsum_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1372
+      y: 892
+      width: 402
+      height: 59
+    spriteID: 866b19572987fed4f8673dbdad554cb0
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 346, y: 828}
+  - name: Lorem Ipsum_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1372
+      y: 959
+      width: 402
+      height: 59
+    spriteID: b5a7ae4966f676f4ca26dd61577f4b7e
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -117, y: 731}
+  - name: Lorem Ipsum_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 995
+      y: 578
+      width: 402
+      height: 59
+    spriteID: 454e7e819d5dd2242b93a9c1bdcd0560
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -28, y: 350}
+  - name: Rounded Rectangle 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1381
+      y: 676
+      width: 448
+      height: 142
+    spriteID: d4bd360057598a64db9b0e570cd839c8
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -85, y: 656}
+  - name: Rounded Rectangle 1_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 892
+      width: 448
+      height: 142
+    spriteID: 834808c5c4354ca45a35bb9ae24c9858
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -996, y: 870}
+  - name: Rounded Rectangle 1_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 460
+      y: 892
+      width: 448
+      height: 142
+    spriteID: 31b4e81b24afdb14582c4d3bb9479798
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1006, y: 708}
+  - name: Rounded Rectangle 1_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 916
+      y: 892
+      width: 448
+      height: 142
+    spriteID: 3506ce07f21156a4ab452ddef1701c50
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -84, y: 708}
+  - name: Which attack will your Pokemon Choose?
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 736
+      y: 676
+      width: 637
+      height: 122
+    spriteID: 11ccdcceaee0588499d83c524285e003
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 565, y: 561}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 2048
+  importedTextureHeight: 2048
+  documentSize: {x: 1920, y: 1080}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 2048
+  textureActualHeight: 2048
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Battle ting
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 
+    layerID: 44
+    mosaicPosition: {x: 0, y: 0}
+  - name: Lorem Ipsum
+    spriteName: Lorem Ipsum
+    isGroup: 0
+    parentIndex: 0
+    spriteID: ee90a6d7aa579cc4c89863e5d7442fac
+    layerID: 43
+    mosaicPosition: {x: 736, y: 806}
+  - name: Lorem Ipsum
+    spriteName: Lorem Ipsum_1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 866b19572987fed4f8673dbdad554cb0
+    layerID: 42
+    mosaicPosition: {x: 1372, y: 892}
+  - name: Lorem Ipsum
+    spriteName: Lorem Ipsum_2
+    isGroup: 0
+    parentIndex: 0
+    spriteID: b5a7ae4966f676f4ca26dd61577f4b7e
+    layerID: 41
+    mosaicPosition: {x: 1372, y: 959}
+  - name: Lorem Ipsum
+    spriteName: Lorem Ipsum_3
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 454e7e819d5dd2242b93a9c1bdcd0560
+    layerID: 40
+    mosaicPosition: {x: 995, y: 578}
+  - name: Rounded Rectangle 1
+    spriteName: Rounded Rectangle 1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: d4bd360057598a64db9b0e570cd839c8
+    layerID: 39
+    mosaicPosition: {x: 1381, y: 676}
+  - name: Rounded Rectangle 1
+    spriteName: Rounded Rectangle 1_1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 834808c5c4354ca45a35bb9ae24c9858
+    layerID: 38
+    mosaicPosition: {x: 4, y: 892}
+  - name: Rounded Rectangle 1
+    spriteName: Rounded Rectangle 1_2
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 31b4e81b24afdb14582c4d3bb9479798
+    layerID: 37
+    mosaicPosition: {x: 460, y: 892}
+  - name: Rounded Rectangle 1
+    spriteName: Rounded Rectangle 1_3
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 3506ce07f21156a4ab452ddef1701c50
+    layerID: 36
+    mosaicPosition: {x: 916, y: 892}
+  - name: Which attack will your Pokemon Choose?
+    spriteName: Which attack will your Pokemon Choose?
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 11ccdcceaee0588499d83c524285e003
+    layerID: 35
+    mosaicPosition: {x: 736, y: 676}
+  - name: text dialog border
+    spriteName: text dialog border
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 5303480c572951e4e96db8b8d615ca16
+    layerID: 33
+    mosaicPosition: {x: 4, y: 362}
+  - name: Dialog Border
+    spriteName: Dialog Border
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 52703842155a8264fb1f43da46d4bf4a
+    layerID: 32
+    mosaicPosition: {x: 4, y: 4}
+  - name: Player 2 Hp Stats
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 30
+    mosaicPosition: {x: 0, y: 0}
+  - name: Pokemon Name
+    spriteName: Pokemon Name_1
+    isGroup: 0
+    parentIndex: 12
+    spriteID: b58948ab96b50e94db915c542795d06a
+    layerID: 29
+    mosaicPosition: {x: 1727, y: 362}
+  - name: Pokemon Level
+    spriteName: Pokemon Level_1
+    isGroup: 0
+    parentIndex: 12
+    spriteID: bde305f4790eb5240baf10fa7499a6eb
+    layerID: 28
+    mosaicPosition: {x: 1146, y: 806}
+  - name: Pokemon Health stat
+    spriteName: Pokemon Health stat_1
+    isGroup: 0
+    parentIndex: 12
+    spriteID: 5e13e979de734c6419c553d01aead581
+    layerID: 27
+    mosaicPosition: {x: 1782, y: 892}
+  - name: HP
+    spriteName: HP_1
+    isGroup: 0
+    parentIndex: 12
+    spriteID: 7b88b4c48f1189d47b1966c54ddf6c16
+    layerID: 26
+    mosaicPosition: {x: 1945, y: 622}
+  - name: Hp Inner White border
+    spriteName: Hp Inner White border_1
+    isGroup: 0
+    parentIndex: 12
+    spriteID: e02762f952ee920429958d360657da8a
+    layerID: 25
+    mosaicPosition: {x: 1381, y: 826}
+  - name: True Hp Bar
+    spriteName: True Hp Bar_1
+    isGroup: 0
+    parentIndex: 12
+    spriteID: decb3874ad0b2aa47865946689255dca
+    layerID: 24
+    mosaicPosition: {x: 4, y: 1042}
+  - name: Hp Black Border
+    spriteName: Hp Black Border_1
+    isGroup: 0
+    parentIndex: 12
+    spriteID: 99cab60e4a8b99348bcd4f9c0427f347
+    layerID: 23
+    mosaicPosition: {x: 1405, y: 578}
+  - name: Player 1 Boarder
+    spriteName: Player 1 Boarder_1
+    isGroup: 0
+    parentIndex: 12
+    spriteID: 194964b6a00d47b478e7c727c9a3f817
+    layerID: 22
+    mosaicPosition: {x: 995, y: 362}
+  - name: Player 1 Hp Stats
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 18
+    mosaicPosition: {x: 0, y: 0}
+  - name: Pokemon Name
+    spriteName: Pokemon Name
+    isGroup: 0
+    parentIndex: 21
+    spriteID: 43f4d32719ceb9645a458f37ce5ecc7d
+    layerID: 7
+    mosaicPosition: {x: 1727, y: 408}
+  - name: Pokemon Level
+    spriteName: Pokemon Level
+    isGroup: 0
+    parentIndex: 21
+    spriteID: 0a7f863e0da238440807afafdfea7ad5
+    layerID: 8
+    mosaicPosition: {x: 1837, y: 676}
+  - name: Pokemon Health stat
+    spriteName: Pokemon Health stat
+    isGroup: 0
+    parentIndex: 21
+    spriteID: 0842ca740cc5c094387e9f96b22cd530
+    layerID: 9
+    mosaicPosition: {x: 1782, y: 959}
+  - name: HP
+    spriteName: HP
+    isGroup: 0
+    parentIndex: 21
+    spriteID: 6c15cd7b5fd482e4a973b017a379a6d2
+    layerID: 13
+    mosaicPosition: {x: 1945, y: 578}
+  - name: Hp Inner White border
+    spriteName: Hp Inner White border
+    isGroup: 0
+    parentIndex: 21
+    spriteID: 713ad3a5330111147b2bb48e7b3a7d5c
+    layerID: 16
+    mosaicPosition: {x: 1381, y: 858}
+  - name: True Hp Bar
+    spriteName: True Hp Bar
+    isGroup: 0
+    parentIndex: 21
+    spriteID: 3fb7596d69e0a5748b070cd1e7fbdbb9
+    layerID: 17
+    mosaicPosition: {x: 455, y: 1042}
+  - name: Hp Black Border
+    spriteName: Hp Black Border
+    isGroup: 0
+    parentIndex: 21
+    spriteID: 1235a76b8c9110d4e8b90c8fb233342f
+    layerID: 15
+    mosaicPosition: {x: 1405, y: 622}
+  - name: Player 1 Boarder
+    spriteName: Player 1 Boarder
+    isGroup: 0
+    parentIndex: 21
+    spriteID: f346964ce39b6bb43978f23abdb921cb
+    layerID: 14
+    mosaicPosition: {x: 4, y: 676}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: Pokemon Health bar template Texture
+  prefabAssetName: Pokemon Health bar template Prefab
+  spriteLibAssetName: Pokemon Health bar template Sprite Lib
+  secondarySpriteTextures: []

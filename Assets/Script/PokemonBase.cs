@@ -42,4 +42,5 @@ public class PokemonBase : MonoBehaviour
     public float baseDEF;
     public float currDEF;
 
+  
 }
