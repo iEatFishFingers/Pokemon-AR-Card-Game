@@ -99,7 +99,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 1837
-      y: 676
+      y: 734
       width: 171
       height: 50
     spriteID: 0a7f863e0da238440807afafdfea7ad5
@@ -112,7 +112,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 241, y: 173}
+    uvTransform: {x: 241, y: 231}
   - name: Pokemon Name
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -142,8 +142,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1945
-      y: 578
+      x: 1921
+      y: 826
       width: 62
       height: 29
     spriteID: 6c15cd7b5fd482e4a973b017a379a6d2
@@ -156,7 +156,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 671, y: 133}
+    uvTransform: {x: 647, y: 381}
   - name: Pokemon Health stat
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -208,8 +208,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 455
-      y: 1042
+      x: 1453
+      y: 649
       width: 443
       height: 19
     spriteID: 3fb7596d69e0a5748b070cd1e7fbdbb9
@@ -222,7 +222,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -888, y: 593}
+    uvTransform: {x: 110, y: 200}
   - name: Hp Inner White border
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -230,8 +230,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1381
-      y: 858
+      x: 995
+      y: 622
       width: 450
       height: 24
     spriteID: 713ad3a5330111147b2bb48e7b3a7d5c
@@ -244,7 +244,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 42, y: 412}
+    uvTransform: {x: -344, y: 176}
   - name: Hp Black Border
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -252,8 +252,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1405
-      y: 622
+      x: 995
+      y: 578
       width: 532
       height: 36
     spriteID: 1235a76b8c9110d4e8b90c8fb233342f
@@ -266,7 +266,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 144, y: 181}
+    uvTransform: {x: -266, y: 137}
   - name: Pokemon Name_1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -296,8 +296,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1146
-      y: 806
+      x: 1837
+      y: 676
       width: 172
       height: 50
     spriteID: bde305f4790eb5240baf10fa7499a6eb
@@ -310,7 +310,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 536, y: -122}
+    uvTransform: {x: 1227, y: -252}
   - name: Pokemon Health stat_1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -340,8 +340,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1945
-      y: 622
+      x: 1727
+      y: 454
       width: 61
       height: 29
     spriteID: 7b88b4c48f1189d47b1966c54ddf6c16
@@ -354,7 +354,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1656, y: -247}
+    uvTransform: {x: 1438, y: -415}
   - name: Hp Inner White border_1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -362,8 +362,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1381
-      y: 826
+      x: 1535
+      y: 578
       width: 450
       height: 24
     spriteID: e02762f952ee920429958d360657da8a
@@ -376,7 +376,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1028, y: -44}
+    uvTransform: {x: 1182, y: -292}
   - name: True Hp Bar_1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -384,8 +384,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 1042
+      x: 1453
+      y: 622
       width: 443
       height: 19
     spriteID: decb3874ad0b2aa47865946689255dca
@@ -398,7 +398,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -353, y: 168}
+    uvTransform: {x: 1096, y: -252}
   - name: Hp Black Border_1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -406,8 +406,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 1405
-      y: 578
+      x: 1381
+      y: 826
       width: 532
       height: 36
     spriteID: 99cab60e4a8b99348bcd4f9c0427f347
@@ -420,7 +420,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1130, y: -287}
+    uvTransform: {x: 1106, y: -39}
   - name: Player 1 Boarder_1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -553,15 +553,15 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: -117, y: 731}
-  - name: Lorem Ipsum_3
+  - name: 'Lorem '
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 995
-      y: 578
+      x: 1146
+      y: 806
       width: 402
       height: 59
     spriteID: 454e7e819d5dd2242b93a9c1bdcd0560
@@ -574,7 +574,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -28, y: 350}
+    uvTransform: {x: 30, y: 566}
   - name: Rounded Rectangle 1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -708,7 +708,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 1
     parentIndex: -1
-    spriteID: 
+    spriteID: 00000000000000000000000000000000
     layerID: 44
     mosaicPosition: {x: 0, y: 0}
   - name: Lorem Ipsum
@@ -732,13 +732,13 @@ ScriptedImporter:
     spriteID: b5a7ae4966f676f4ca26dd61577f4b7e
     layerID: 41
     mosaicPosition: {x: 1372, y: 959}
-  - name: Lorem Ipsum
-    spriteName: Lorem Ipsum_3
+  - name: 'Lorem '
+    spriteName: 'Lorem '
     isGroup: 0
     parentIndex: 0
     spriteID: 454e7e819d5dd2242b93a9c1bdcd0560
     layerID: 40
-    mosaicPosition: {x: 995, y: 578}
+    mosaicPosition: {x: 1146, y: 806}
   - name: Rounded Rectangle 1
     spriteName: Rounded Rectangle 1
     isGroup: 0
@@ -808,7 +808,7 @@ ScriptedImporter:
     parentIndex: 12
     spriteID: bde305f4790eb5240baf10fa7499a6eb
     layerID: 28
-    mosaicPosition: {x: 1146, y: 806}
+    mosaicPosition: {x: 1837, y: 676}
   - name: Pokemon Health stat
     spriteName: Pokemon Health stat_1
     isGroup: 0
@@ -822,28 +822,28 @@ ScriptedImporter:
     parentIndex: 12
     spriteID: 7b88b4c48f1189d47b1966c54ddf6c16
     layerID: 26
-    mosaicPosition: {x: 1945, y: 622}
+    mosaicPosition: {x: 1727, y: 454}
   - name: Hp Inner White border
     spriteName: Hp Inner White border_1
     isGroup: 0
     parentIndex: 12
     spriteID: e02762f952ee920429958d360657da8a
     layerID: 25
-    mosaicPosition: {x: 1381, y: 826}
+    mosaicPosition: {x: 1535, y: 578}
   - name: True Hp Bar
     spriteName: True Hp Bar_1
     isGroup: 0
     parentIndex: 12
     spriteID: decb3874ad0b2aa47865946689255dca
     layerID: 24
-    mosaicPosition: {x: 4, y: 1042}
+    mosaicPosition: {x: 1453, y: 622}
   - name: Hp Black Border
     spriteName: Hp Black Border_1
     isGroup: 0
     parentIndex: 12
     spriteID: 99cab60e4a8b99348bcd4f9c0427f347
     layerID: 23
-    mosaicPosition: {x: 1405, y: 578}
+    mosaicPosition: {x: 1381, y: 826}
   - name: Player 1 Boarder
     spriteName: Player 1 Boarder_1
     isGroup: 0
@@ -871,7 +871,7 @@ ScriptedImporter:
     parentIndex: 21
     spriteID: 0a7f863e0da238440807afafdfea7ad5
     layerID: 8
-    mosaicPosition: {x: 1837, y: 676}
+    mosaicPosition: {x: 1837, y: 734}
   - name: Pokemon Health stat
     spriteName: Pokemon Health stat
     isGroup: 0
@@ -885,28 +885,28 @@ ScriptedImporter:
     parentIndex: 21
     spriteID: 6c15cd7b5fd482e4a973b017a379a6d2
     layerID: 13
-    mosaicPosition: {x: 1945, y: 578}
+    mosaicPosition: {x: 1921, y: 826}
   - name: Hp Inner White border
     spriteName: Hp Inner White border
     isGroup: 0
     parentIndex: 21
     spriteID: 713ad3a5330111147b2bb48e7b3a7d5c
     layerID: 16
-    mosaicPosition: {x: 1381, y: 858}
+    mosaicPosition: {x: 995, y: 622}
   - name: True Hp Bar
     spriteName: True Hp Bar
     isGroup: 0
     parentIndex: 21
     spriteID: 3fb7596d69e0a5748b070cd1e7fbdbb9
     layerID: 17
-    mosaicPosition: {x: 455, y: 1042}
+    mosaicPosition: {x: 1453, y: 649}
   - name: Hp Black Border
     spriteName: Hp Black Border
     isGroup: 0
     parentIndex: 21
     spriteID: 1235a76b8c9110d4e8b90c8fb233342f
     layerID: 15
-    mosaicPosition: {x: 1405, y: 622}
+    mosaicPosition: {x: 995, y: 578}
   - name: Player 1 Boarder
     spriteName: Player 1 Boarder
     isGroup: 0

@@ -994,3 +994,28 @@ AssetImportParameters requested are different than current active one (requested
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 688.358201 seconds.
+  path: Assets/Resources
+  artifactKey: Guid(71c2447e0265b8b41bc28f5e9a870971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources using Guid(71c2447e0265b8b41bc28f5e9a870971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '947e186f3b9cdc9cf9edb2bf83731a30') in 0.008786 seconds 
+  Import took 0.012230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.504013 seconds.
+  path: Assets/UI/Minecraft SDF.asset
+  artifactKey: Guid(e7fb0651a961d8545924016653acba0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Minecraft SDF.asset using Guid(e7fb0651a961d8545924016653acba0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb9ad585c60cdb21040314a272b2235c') in 0.122282 seconds 
+  Import took 0.125512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.477879 seconds.
+  path: Assets/UI/Pokemon Health bar template.psb
+  artifactKey: Guid(5d6f60dc52f226940a3580997e4d6435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/Pokemon Health bar template.psb using Guid(5d6f60dc52f226940a3580997e4d6435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7359243a4167c7611136cd91e63f85ae') in 0.253008 seconds 
+  Import took 0.256674 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
