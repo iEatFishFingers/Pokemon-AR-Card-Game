@@ -11,7 +11,7 @@ public class PokemonBase : MonoBehaviour
     public float baseMP;
     public float currMP;
 
-    
+
     public enum Type
     {
 
@@ -42,5 +42,5 @@ public class PokemonBase : MonoBehaviour
     public float baseDEF;
     public float currDEF;
 
-  
+
 }
