@@ -8,6 +8,11 @@ using TMPro;
 
 public class StateMachine : MonoBehaviour
 {
+    public static StateMachine SM;
+    void Awake()
+    {
+        SM = this;
+    }
     public GameObject Canvas;
     //the two lines below will be used for transforming the pokemons
 
@@ -53,7 +58,7 @@ public class StateMachine : MonoBehaviour
     void Update()
     {
         healthBarMovement();
-        //HpColorChange();
+        HpColorChange();
     }
 
     float calcPlayer1Health()
@@ -73,20 +78,20 @@ public class StateMachine : MonoBehaviour
     {
         if (calcPlayer2Health() <= 0.5 && calcPlayer1Health() > 0.2)
         {
-            Player1HealthBar.color = new Color32(254, 161, 0, 1);
+            Player1HealthBar.color = new Color(254, 161, 0, 1);
         }
         else if (calcPlayer1Health() <= 0.2)
         {
-            Player1HealthBar.color = new Color32(254, 9, 0, 1);
+            Player1HealthBar.color = new Color(254, 9, 0, 1);
         }
 
         if (calcPlayer2Health() <= 0.5 && calcPlayer1Health() > 0.2)
         {
-            Player2HealthBar.color = new Color32(254, 161, 0, 1);
+            Player2HealthBar.color = new Color(254, 161, 0, 1);
         }
         else if (calcPlayer2Health() <= 0.2)
         {
-            Player2HealthBar.color = new Color32(254, 9, 0, 1);
+            Player2HealthBar.color = new Color(254, 9, 0, 1);
         }
 
     }
@@ -125,8 +130,6 @@ public class StateMachine : MonoBehaviour
         BattleSetup();
     }
 
-
-
     void initPlayers(PokemonBase stats)
     {
         if (!Isp1Populated)
@@ -160,11 +163,13 @@ public class StateMachine : MonoBehaviour
         {
             DialogText.text = "What will " + player2Stats.name + " do ?";
             player1turn(attack);
+            AnimationHandler.AH.Pokemon = player1Stats;
         }
         else if (state == GameState.Player2Turn)
         {
             DialogText.text = "What will " + player2Stats.name + " do ?";
             player2turn(attack);
+            AnimationHandler.AH.Pokemon = player2Stats;
         }
         Debug.Log(state);
     }
@@ -176,6 +181,7 @@ public class StateMachine : MonoBehaviour
         {
             case 1:
                 player2Stats.currHP = player2Stats.currHP - player1Stats.Attack1Damage;
+
                 break;
             case 2:
                 player2Stats.currHP = player2Stats.currHP - player1Stats.Attack2Damage;
