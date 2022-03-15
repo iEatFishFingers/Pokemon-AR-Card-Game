@@ -277,6 +277,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 165585583}
   m_CullTransparentMesh: 1
+--- !u!21 &178231580
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'SquirtleMaterial
+
+    18104'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f067ba074f4a4157b15077a770e5f02c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &223974226
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,6 +501,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b306673198a4ca42910739a98d466d5, type: 3}
+--- !u!114 &279341512 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8913710711474911646, guid: ed710c44587f2fe42a52612465aa0715,
+    type: 3}
+  m_PrefabInstance: {fileID: 8913710711324163446}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &302988618
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,7 +549,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.52000004, y: 0.16220963}
   m_AnchorMax: {x: 0.75375015, y: 0.29200003}
-  m_AnchoredPosition: {x: 0.19000244, y: 0.85006714}
+  m_AnchoredPosition: {x: 0.19000244, y: 0.85009766}
   m_SizeDelta: {x: 2.580007, y: 1.0999663}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &302988620
@@ -605,6 +646,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 302988618}
   m_CullTransparentMesh: 1
+--- !u!21 &331384467
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'LucarioMaterial
+
+    18052'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: fd704c00a0d5450abcddbe45bd0fdab1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &360976228
 GameObject:
   m_ObjectHideFlags: 0
@@ -639,7 +709,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.31579039}
-  m_AnchoredPosition: {x: 0, y: -2.0000305}
+  m_AnchoredPosition: {x: 0, y: -2.000061}
   m_SizeDelta: {x: 2, y: 5.300003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &360976230
@@ -894,7 +964,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1475752052}
+  - {fileID: 751262055}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1288,6 +1358,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 739878066}
   m_CullTransparentMesh: 1
+--- !u!21 &751262055
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'CharmanderMaterial
+
+    17972'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 8fc8504a5408476d99b4be5d64da4686, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &832470082
 GameObject:
   m_ObjectHideFlags: 0
@@ -1399,7 +1498,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.76375, y: 0.017}
   m_AnchorMax: {x: 1, y: 0.147}
-  m_AnchoredPosition: {x: 0.6999817, y: -0.7999573}
+  m_AnchoredPosition: {x: 0.6999512, y: -0.79992676}
   m_SizeDelta: {x: 0.5800171, y: 1.099968}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &854905464
@@ -1530,7 +1629,6 @@ GameObject:
   m_Component:
   - component: {fileID: 899995033}
   - component: {fileID: 899995034}
-  - component: {fileID: 899995035}
   m_Layer: 0
   m_Name: Main
   m_TagString: Untagged
@@ -1574,19 +1672,9 @@ MonoBehaviour:
   playerAtt2: {fileID: 1562069061}
   playerAtt3: {fileID: 463930440}
   playerAtt4: {fileID: 1985308838}
+  Player1HealthBar: {fileID: 279341512}
+  Player2HealthBar: {fileID: 1327812706}
   state: 0
---- !u!114 &899995035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 899995032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 505b55635f43d2a4a9448377db9c035e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &908605621
 GameObject:
   m_ObjectHideFlags: 0
@@ -1666,35 +1754,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908605621}
   m_CullTransparentMesh: 1
---- !u!21 &931873463
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'SquirtleMaterial
-
-    114422'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: f067ba074f4a4157b15077a770e5f02c, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &1120100363
 GameObject:
   m_ObjectHideFlags: 0
@@ -1743,7 +1802,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1317659311}
+  - {fileID: 331384467}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1880,7 +1939,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.76375, y: 0.16220963}
   m_AnchorMax: {x: 1, y: 0.29200003}
-  m_AnchoredPosition: {x: 0.7000122, y: 0.85006714}
+  m_AnchoredPosition: {x: 0.7000122, y: 0.85009766}
   m_SizeDelta: {x: 0.5800171, y: 1.099966}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1207409702
@@ -2191,51 +2250,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25ae5648fc4e8e84c88bab6eac453aba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Attack1Name: Tackle
-  Attack1Damage: 5
-  Attack1Points: 100
-  PokemonAttackType: 6
-  Attack2Name: Flare
-  Attack2Damage: 15
-  Attack2Points: 10
-  Pokemon2AttackType: 1
-  Attack3Name: Ember
-  Attack3Damage: 60
-  Attack3Points: 5
-  PokemonAttack3Type: 1
-  Attack4Name: Scratch
-  Attack4Damage: 10
-  Attack4Points: 100
-  PokemonAttack4Type: 6
---- !u!21 &1317659311
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'LucarioMaterial
-
-    114334'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: fd704c00a0d5450abcddbe45bd0fdab1, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &1327812704
 GameObject:
   m_ObjectHideFlags: 0
@@ -2268,11 +2282,11 @@ RectTransform:
   m_Father: {fileID: 1285096830}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.34228948, y: 0.4072218}
-  m_AnchorMax: {x: 0.9501579, y: 0.4768145}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 104.00003, y: -5.0000324}
+  m_SizeDelta: {x: 185, y: 6}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1327812706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2359,7 +2373,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 931873463}
+  - {fileID: 178231580}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2690,35 +2704,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &1475752052
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'CharmanderMaterial
-
-    114158'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 8fc8504a5408476d99b4be5d64da4686, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
-  m_BuildTextureStacks: []
 --- !u!4 &1507200102 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7799695761809607942, guid: 5b306673198a4ca42910739a98d466d5,
@@ -2844,7 +2829,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.017}
   m_AnchorMax: {x: 0.51000005, y: 0.29200003}
-  m_AnchoredPosition: {x: 4.200012, y: 1.6999817}
+  m_AnchoredPosition: {x: 4.2000732, y: 1.6999512}
   m_SizeDelta: {x: -81.79999, y: -14.599998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1577749885
@@ -3004,7 +2989,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.52000004, y: 0.014841919}
   m_AnchorMax: {x: 0.75625014, y: 0.14484192}
-  m_AnchoredPosition: {x: -0.80999756, y: 0.19998169}
+  m_AnchoredPosition: {x: -0.80999756, y: 0.19995117}
   m_SizeDelta: {x: 0.5800071, y: 1.099968}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1793089058
@@ -3422,22 +3407,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25ae5648fc4e8e84c88bab6eac453aba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Attack1Name: Kick
-  Attack1Damage: 30
-  Attack1Points: 100
-  PokemonAttackType: 6
-  Attack2Name: Missle jab
-  Attack2Damage: 70
-  Attack2Points: 10
-  Pokemon2AttackType: 0
-  Attack3Name: Rock Smash
-  Attack3Damage: 50
-  Attack3Points: 10
-  PokemonAttack3Type: 2
-  Attack4Name: Water Pulse
-  Attack4Damage: 60
-  Attack4Points: 5
-  PokemonAttack4Type: 3
 --- !u!1 &1836311467
 GameObject:
   m_ObjectHideFlags: 0
@@ -3876,6 +3845,51 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913710711474911633, guid: ed710c44587f2fe42a52612465aa0715,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913710711474911633, guid: ed710c44587f2fe42a52612465aa0715,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913710711474911633, guid: ed710c44587f2fe42a52612465aa0715,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913710711474911633, guid: ed710c44587f2fe42a52612465aa0715,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913710711474911633, guid: ed710c44587f2fe42a52612465aa0715,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913710711474911633, guid: ed710c44587f2fe42a52612465aa0715,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 185
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913710711474911633, guid: ed710c44587f2fe42a52612465aa0715,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913710711474911633, guid: ed710c44587f2fe42a52612465aa0715,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 104.000015
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913710711474911633, guid: ed710c44587f2fe42a52612465aa0715,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed710c44587f2fe42a52612465aa0715, type: 3}

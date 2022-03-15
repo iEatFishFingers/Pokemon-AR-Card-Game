@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using Vuforia;
+
+
 
 public class StateMachine : MonoBehaviour
 {
@@ -28,6 +29,8 @@ public class StateMachine : MonoBehaviour
     public Text playerAtt3;
     public Text playerAtt4;
 
+    public Image Player1HealthBar;
+    public Image Player2HealthBar;
 
     //gamestate 
     public enum GameState { Start, Player1Turn, Player2Turn, Won, Loss }
@@ -39,7 +42,7 @@ public class StateMachine : MonoBehaviour
 
     void Start()
     {
-        Canvas.gameObject.SetActive(false);
+        //Canvas.gameObject.SetActive(false);
         DialogText.text = "Welcome to Pokemon AR";
         state = GameState.Start;
         Debug.Log("Game Started");
@@ -47,12 +50,56 @@ public class StateMachine : MonoBehaviour
 
     }
 
-
     void Update()
     {
+        healthBarMovement();
+        //HpColorChange();
+    }
+
+    float calcPlayer1Health()
+    {
+        float percent = player1Stats.currHP / player1Stats.baseHP;
+
+        return percent;
+    }
+    float calcPlayer2Health()
+    {
+        float percent = player2Stats.currHP / player2Stats.baseHP;
+
+        return percent;
+    }
+
+    void HpColorChange()
+    {
+        if (calcPlayer2Health() <= 0.5 && calcPlayer1Health() > 0.2)
+        {
+            Player1HealthBar.color = new Color32(254, 161, 0, 1);
+        }
+        else if (calcPlayer1Health() <= 0.2)
+        {
+            Player1HealthBar.color = new Color32(254, 9, 0, 1);
+        }
+
+        if (calcPlayer2Health() <= 0.5 && calcPlayer1Health() > 0.2)
+        {
+            Player2HealthBar.color = new Color32(254, 161, 0, 1);
+        }
+        else if (calcPlayer2Health() <= 0.2)
+        {
+            Player2HealthBar.color = new Color32(254, 9, 0, 1);
+        }
+
+    }
+
+    void healthBarMovement()
+    {
+
+        Player1HealthBar.rectTransform.localScale = new Vector3(calcPlayer1Health(), 1, 1);
+        Player2HealthBar.rectTransform.localScale = new Vector3(calcPlayer2Health(), 1, 1);
         Player1HP.text = player1Stats.currHP + "/" + player1Stats.baseHP;
         Player2HP.text = player2Stats.currHP + "/" + player2Stats.baseHP;
     }
+
     public void loadplayer1(PokemonBase stats)
     {
         player1Stats = stats;
