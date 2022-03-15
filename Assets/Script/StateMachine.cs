@@ -59,7 +59,7 @@ public class StateMachine : MonoBehaviour
         Isp1Populated = true;
 
         Player1Name.text = stats.name;
-        Player1HP.text = stats.currHP + "/" + stats.baseHP;
+        Player1HP.text = stats.baseHP + "/" + stats.baseHP;
         playerAtt1.text = stats.Attack1Name;
         playerAtt2.text = stats.Attack2Name;
         playerAtt3.text = stats.Attack3Name;
@@ -73,7 +73,7 @@ public class StateMachine : MonoBehaviour
         player2Stats = stats;
 
         Player2Name.text = stats.name;
-        Player2HP.text = stats.currHP + "/" + stats.baseHP;
+        Player2HP.text = stats.baseHP + "/" + stats.baseHP;
         Debug.Log("the pokemon that loaded is" + stats.name);
         BattleSetup();
     }
@@ -105,42 +105,47 @@ public class StateMachine : MonoBehaviour
 
     }
 
-    public void whichplayer(string attack)
+    public void whichplayer(int attack)
     {
         Debug.Log("Button pressed now");
 
         if (state == GameState.Player1Turn)
         {
+            DialogText.text = "What will " + player2Stats.name + " do ?";
             player1turn(attack);
         }
-        if (state == GameState.Player2Turn)
+        else if (state == GameState.Player2Turn)
         {
-            //player2turn();
+            DialogText.text = "What will " + player2Stats.name + " do ?";
+            player2turn(attack);
         }
+        Debug.Log(state);
     }
 
-    public void player1turn(string attack)
+    void player1turn(int attack)
     {
-        if (attack == player1Stats.Attack1Name)
+
+        switch (attack)
         {
-            player2Stats.currHP = player2Stats.currHP - (player2Stats.currDEF - player1Stats.Attack1Damage);
+            case 1:
+                player2Stats.currHP = player2Stats.currHP - player1Stats.Attack1Damage;
+                break;
+            case 2:
+                player2Stats.currHP = player2Stats.currHP - player1Stats.Attack2Damage;
+                break;
+            case 3:
+                player2Stats.currHP = player2Stats.currHP - player1Stats.Attack3Damage;
+                break;
+            case 4:
+                player2Stats.currHP = player2Stats.currHP - player1Stats.Attack4Damage;
+                break;
         }
-        else if (attack == player1Stats.Attack2Name)
-        {
-            player2Stats.currHP = player2Stats.currHP - (player2Stats.currDEF - player1Stats.Attack2Damage);
-        }
-        else if (attack == player1Stats.Attack3Name)
-        {
-            player2Stats.currHP = player2Stats.currHP - (player2Stats.currDEF - player1Stats.Attack3Damage);
-        }
-        else if (attack == player1Stats.Attack4Name)
-        {
-            player2Stats.currHP = player2Stats.currHP - (player2Stats.currDEF - player1Stats.Attack4Damage);
-        }
+
 
 
         if (player2Stats.currHP <= 0)
         {
+            Canvas.gameObject.SetActive(false);
             state = GameState.Won;
         }
         else
@@ -148,19 +153,60 @@ public class StateMachine : MonoBehaviour
             state = GameState.Player2Turn;
         }
         Debug.Log("Damage done and player 2 turn on next hit");
+        Debug.Log(state);
+        playerAttacks();
     }
 
-    void player2turn()
+    void player2turn(int attack)
     {
-        player1Stats.currHP = player1Stats.currHP - (player1Stats.currDEF - player2Stats.currATK);
+
+
+        switch (attack)
+        {
+            case 1:
+                player1Stats.currHP = player1Stats.currHP - player2Stats.Attack1Damage;
+                break;
+            case 2:
+                player1Stats.currHP = player1Stats.currHP - player2Stats.Attack2Damage;
+                break;
+            case 3:
+                player1Stats.currHP = player1Stats.currHP - player2Stats.Attack3Damage;
+                break;
+            case 4:
+                player1Stats.currHP = player1Stats.currHP - player2Stats.Attack4Damage;
+                break;
+        }
 
         if (player1Stats.currHP <= 0)
         {
             state = GameState.Loss;
+            Canvas.gameObject.SetActive(false);
         }
         else
         {
             state = GameState.Player1Turn;
         }
+        Debug.Log(state);
+        playerAttacks();
     }
+
+    void playerAttacks()
+    {
+        if (state == GameState.Player1Turn)
+        {
+            playerAtt1.text = player1Stats.Attack1Name;
+            playerAtt2.text = player1Stats.Attack2Name;
+            playerAtt3.text = player1Stats.Attack3Name;
+            playerAtt4.text = player1Stats.Attack4Name;
+        }
+        else if (state == GameState.Player2Turn)
+        {
+            playerAtt1.text = player2Stats.Attack1Name;
+            playerAtt2.text = player2Stats.Attack2Name;
+            playerAtt3.text = player2Stats.Attack3Name;
+            playerAtt4.text = player2Stats.Attack4Name;
+        }
+    }
+
 }
+

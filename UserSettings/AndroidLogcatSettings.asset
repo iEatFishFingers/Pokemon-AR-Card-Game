@@ -3,10 +3,10 @@
     "m_SelectedPackage": {
         "deviceId": "5ed30b6",
         "name": "com.DefaultCompany.VuforiaVersionPokemonAR",
-        "processId": 5421,
+        "processId": 9734,
         "exited": false
     },
-    "m_SelectedPriority": 0,
+    "m_SelectedPriority": 1,
     "m_KnownPackagesForSerialization": [
         {
             "deviceId": "5ed30b6",
@@ -199,6 +199,66 @@
             "name": "com.DefaultCompany.VuforiaVersionPokemonAR",
             "processId": 5421,
             "exited": false
+        },
+        {
+            "deviceId": "5ed30b6",
+            "name": "com.DefaultCompany.VuforiaVersionPokemonAR",
+            "processId": 6062,
+            "exited": false
+        },
+        {
+            "deviceId": "5ed30b6",
+            "name": "com.DefaultCompany.VuforiaVersionPokemonAR",
+            "processId": 6627,
+            "exited": false
+        },
+        {
+            "deviceId": "5ed30b6",
+            "name": "com.DefaultCompany.VuforiaVersionPokemonAR",
+            "processId": 7024,
+            "exited": false
+        },
+        {
+            "deviceId": "5ed30b6",
+            "name": "com.DefaultCompany.VuforiaVersionPokemonAR",
+            "processId": 7464,
+            "exited": false
+        },
+        {
+            "deviceId": "5ed30b6",
+            "name": "com.DefaultCompany.VuforiaVersionPokemonAR",
+            "processId": 7872,
+            "exited": false
+        },
+        {
+            "deviceId": "5ed30b6",
+            "name": "com.DefaultCompany.VuforiaVersionPokemonAR",
+            "processId": 8274,
+            "exited": false
+        },
+        {
+            "deviceId": "5ed30b6",
+            "name": "com.DefaultCompany.VuforiaVersionPokemonAR",
+            "processId": 8623,
+            "exited": false
+        },
+        {
+            "deviceId": "5ed30b6",
+            "name": "com.DefaultCompany.VuforiaVersionPokemonAR",
+            "processId": 9003,
+            "exited": false
+        },
+        {
+            "deviceId": "5ed30b6",
+            "name": "com.DefaultCompany.VuforiaVersionPokemonAR",
+            "processId": 9353,
+            "exited": false
+        },
+        {
+            "deviceId": "5ed30b6",
+            "name": "com.DefaultCompany.VuforiaVersionPokemonAR",
+            "processId": 9734,
+            "exited": false
         }
     ],
     "m_Tags": {
@@ -209,7 +269,7 @@
             },
             {
                 "m_Name": "No Filter",
-                "m_Selected": true
+                "m_Selected": false
             },
             {
                 "m_Name": "",
@@ -225,7 +285,7 @@
             },
             {
                 "m_Name": "Unity",
-                "m_Selected": false
+                "m_Selected": true
             },
             {
                 "m_Name": "CRASH",
