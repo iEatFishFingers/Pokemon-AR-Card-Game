@@ -91,6 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3894773512240403904}
   - component: {fileID: 776513266681544883}
+  - component: {fileID: -2331497835793112813}
   m_Layer: 0
   m_Name: Charmander
   m_TagString: Untagged
@@ -137,6 +138,25 @@ MonoBehaviour:
   currATK: 30
   baseDEF: 30
   currDEF: 30
+--- !u!95 &-2331497835793112813
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4415448976212414330}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 319e546205964ce45900dc2ada405379, type: 3}
+  m_Controller: {fileID: 9100000, guid: 4de111b2adcf9aa4cabe0a915f7720ca, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8626414416837103284
 GameObject:
   m_ObjectHideFlags: 0

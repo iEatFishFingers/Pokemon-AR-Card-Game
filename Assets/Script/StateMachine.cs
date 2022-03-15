@@ -10,15 +10,10 @@ public class StateMachine : MonoBehaviour
     public GameObject Canvas;
     //the two lines below will be used for transforming the pokemons
 
-    public GameObject[] listofPokemon;
-
-    public GameObject player1;
-
-    public GameObject player2;
 
     //the two lines below will be used for controlling the stats of the pokemon e.g health
-    public PokemonBase player1Stats; // user controlled player
-    public PokemonBase player2Stats;
+    PokemonBase player1Stats; // user controlled player
+    PokemonBase player2Stats;
 
     //ui stuff
     public TextMeshProUGUI Player1Name;
@@ -28,10 +23,17 @@ public class StateMachine : MonoBehaviour
     public Text Player2HP;
     public Text DialogText;
 
+    public Text playerAtt1;
+    public Text playerAtt2;
+    public Text playerAtt3;
+    public Text playerAtt4;
+
+
     //gamestate 
     public enum GameState { Start, Player1Turn, Player2Turn, Won, Loss }
     public GameState state;
 
+    bool Isp1Populated = false;
 
 
 
@@ -40,7 +42,6 @@ public class StateMachine : MonoBehaviour
         Canvas.gameObject.SetActive(false);
         DialogText.text = "Welcome to Pokemon AR";
         state = GameState.Start;
-        initPlayers();
         Debug.Log("Game Started");
 
 
@@ -49,65 +50,94 @@ public class StateMachine : MonoBehaviour
 
     void Update()
     {
-        // Player1HP.text = player1Stats.currHP + "/" + player1Stats.baseHP;
-        // Player2HP.text = player2Stats.currHP + "/" + player2Stats.baseHP;
+        Player1HP.text = player1Stats.currHP + "/" + player1Stats.baseHP;
+        Player2HP.text = player2Stats.currHP + "/" + player2Stats.baseHP;
+    }
+    public void loadplayer1(PokemonBase stats)
+    {
+        player1Stats = stats;
+        Isp1Populated = true;
+
+        Player1Name.text = stats.name;
+        Player1HP.text = stats.currHP + "/" + stats.baseHP;
+        playerAtt1.text = stats.Attack1Name;
+        playerAtt2.text = stats.Attack2Name;
+        playerAtt3.text = stats.Attack3Name;
+        playerAtt4.text = stats.Attack4Name;
+
+        Debug.Log("the pokemon that loaded is" + stats.name);
     }
 
-    void initPlayers()
+    public void loadplayer2(PokemonBase stats)
     {
-        Debug.Log("now scanning for first pokemon");
-        for (int i = 0; i < listofPokemon.Length - 1; i++)
+        player2Stats = stats;
+
+        Player2Name.text = stats.name;
+        Player2HP.text = stats.currHP + "/" + stats.baseHP;
+        Debug.Log("the pokemon that loaded is" + stats.name);
+        BattleSetup();
+    }
+
+
+
+    void initPlayers(PokemonBase stats)
+    {
+        if (!Isp1Populated)
         {
-
-            var imageTarget = listofPokemon[i];
-            var trackable = imageTarget.GetComponent<TargetStatus>();
-            var status = trackable.Status;
-            Debug.Log("the status of" + listofPokemon[i].gameObject.name + status);
-
+            loadplayer1(stats);
+        }
+        else
+        {
+            loadplayer2(stats);
         }
 
-        //scan the first can and that would be player one player one 
-
-
-        // scan the second and be named player 2 
-
-
-        // start the fight sequence
-        Debug.Log("Init pokemons successfull");
         BattleSetup();
-
     }
 
     void BattleSetup()
     {
         //setup
-        Player1Name.text = player1Stats.name;
-        Player1HP.text = player1Stats.currHP + "/" + player1Stats.baseHP;
-        Player2Name.text = player2Stats.name;
-        Player2HP.text = player2Stats.currHP + "/" + player2Stats.baseHP;
+        Canvas.gameObject.SetActive(true);
         state = GameState.Player1Turn;
         DialogText.text = "What will " + player1Stats.name + " do ?";
         Debug.Log("Battle Setup Successful");
 
+
     }
 
-    public void whichplayer()
+    public void whichplayer(string attack)
     {
         Debug.Log("Button pressed now");
-        DialogText.text = "button pressed";
+
         if (state == GameState.Player1Turn)
         {
-            player1turn();
+            player1turn(attack);
         }
         if (state == GameState.Player2Turn)
         {
-            player2turn();
+            //player2turn();
         }
     }
 
-    void player1turn()
+    public void player1turn(string attack)
     {
-        player2Stats.currHP = player2Stats.currHP - (player2Stats.currDEF - player1Stats.currATK);
+        if (attack == player1Stats.Attack1Name)
+        {
+            player2Stats.currHP = player2Stats.currHP - (player2Stats.currDEF - player1Stats.Attack1Damage);
+        }
+        else if (attack == player1Stats.Attack2Name)
+        {
+            player2Stats.currHP = player2Stats.currHP - (player2Stats.currDEF - player1Stats.Attack2Damage);
+        }
+        else if (attack == player1Stats.Attack3Name)
+        {
+            player2Stats.currHP = player2Stats.currHP - (player2Stats.currDEF - player1Stats.Attack3Damage);
+        }
+        else if (attack == player1Stats.Attack4Name)
+        {
+            player2Stats.currHP = player2Stats.currHP - (player2Stats.currDEF - player1Stats.Attack4Damage);
+        }
+
 
         if (player2Stats.currHP <= 0)
         {
@@ -124,7 +154,7 @@ public class StateMachine : MonoBehaviour
     {
         player1Stats.currHP = player1Stats.currHP - (player1Stats.currDEF - player2Stats.currATK);
 
-        if (player2Stats.currHP <= 0)
+        if (player1Stats.currHP <= 0)
         {
             state = GameState.Loss;
         }
