@@ -163,13 +163,15 @@ public class StateMachine : MonoBehaviour
         {
             DialogText.text = "What will " + player2Stats.name + " do ?";
             player1turn(attack);
-            AnimationHandler.AH.Pokemon = player1Stats;
+            AnimationHandler.AH.Attacker = player1Stats;
+            AnimationHandler.AH.Enemy = player2Stats;
         }
         else if (state == GameState.Player2Turn)
         {
             DialogText.text = "What will " + player2Stats.name + " do ?";
             player2turn(attack);
-            AnimationHandler.AH.Pokemon = player2Stats;
+            AnimationHandler.AH.Attacker = player2Stats;
+            AnimationHandler.AH.Enemy = player1Stats;
         }
         Debug.Log(state);
     }
@@ -180,16 +182,23 @@ public class StateMachine : MonoBehaviour
         switch (attack)
         {
             case 1:
+                AnimationHandler.AH.run();
+                AnimationHandler.AH.Attack(player1Stats.Attack1Name);
                 player2Stats.currHP = player2Stats.currHP - player1Stats.Attack1Damage;
-
                 break;
             case 2:
+                AnimationHandler.AH.run();
+                AnimationHandler.AH.Attack(player1Stats.Attack2Name);
                 player2Stats.currHP = player2Stats.currHP - player1Stats.Attack2Damage;
                 break;
             case 3:
+                AnimationHandler.AH.run();
+                AnimationHandler.AH.Attack(player1Stats.Attack3Name);
                 player2Stats.currHP = player2Stats.currHP - player1Stats.Attack3Damage;
                 break;
             case 4:
+                AnimationHandler.AH.run();
+                AnimationHandler.AH.Attack(player1Stats.Attack4Name);
                 player2Stats.currHP = player2Stats.currHP - player1Stats.Attack4Damage;
                 break;
         }
@@ -217,15 +226,23 @@ public class StateMachine : MonoBehaviour
         switch (attack)
         {
             case 1:
+                AnimationHandler.AH.run();
+                AnimationHandler.AH.Attack(player2Stats.Attack1Name);
                 player1Stats.currHP = player1Stats.currHP - player2Stats.Attack1Damage;
                 break;
             case 2:
+                AnimationHandler.AH.run();
+                AnimationHandler.AH.Attack(player2Stats.Attack2Name);
                 player1Stats.currHP = player1Stats.currHP - player2Stats.Attack2Damage;
                 break;
             case 3:
+                AnimationHandler.AH.run();
+                AnimationHandler.AH.Attack(player1Stats.Attack3Name);
                 player1Stats.currHP = player1Stats.currHP - player2Stats.Attack3Damage;
                 break;
             case 4:
+                AnimationHandler.AH.run();
+                AnimationHandler.AH.Attack(player2Stats.Attack4Name);
                 player1Stats.currHP = player1Stats.currHP - player2Stats.Attack4Damage;
                 break;
         }

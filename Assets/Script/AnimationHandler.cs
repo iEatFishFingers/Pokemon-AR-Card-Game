@@ -20,11 +20,7 @@ public class AnimationHandler : MonoBehaviour
     public Dictionary<string, float> cliptime;
 
 
-    private void run()
-    {
-        StartCoroutine(RunAnimation()); //await async 
 
-    }
     void GetClipTimes()
     {
         AnimationClip[] Clips = Lucario.runtimeAnimatorController.animationClips;
@@ -33,15 +29,22 @@ public class AnimationHandler : MonoBehaviour
             if (!cliptime.ContainsKey(clip.name))
                 cliptime.Add(clip.name, clip.length);
     }
-
-    public IEnumerator AttackAnimation(string attack)
+    public void Attack(string attack)
+    {
+        AttackAnimation(attack);
+    }
+    private IEnumerator AttackAnimation(string attack)
     {
         //set anim to true
-        Lucario.SetBool(attack, true);
-        yield return new WaitForSeconds(cliptime["RUNNING"]);
-        Lucario.SetBool(attack, false);
+        Lucario.SetBool("Attacking", true);
+        yield return new WaitForSeconds(cliptime[attack]);
+        Lucario.SetBool("Attacking", false);
     }
+    public void run()
+    {
+        StartCoroutine(RunAnimation()); //await async 
 
+    }
     private IEnumerator RunAnimation()
     {
         //set anim to true
@@ -49,6 +52,16 @@ public class AnimationHandler : MonoBehaviour
         yield return new WaitForSeconds(cliptime["RUNNING"]);
         Lucario.SetBool("Running", false);
 
+    }
+    public void GetHit()
+    {
+        GetHitAnimation();
+    }
+    private IEnumerator GetHitAnimation()
+    {
+        Lucario.SetBool("Running", true);
+        yield return new WaitForSeconds(cliptime["RUNNING"]);
+        Lucario.SetBool("Running", false);
     }
 
 
