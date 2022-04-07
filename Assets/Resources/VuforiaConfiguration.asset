@@ -42,7 +42,8 @@ MonoBehaviour:
     autoImportArcore: 0
     thirdPartyARCoreClientDetected: 0
   playmode:
-    mSequencePath: 
+    mSequencePath: C:/Users/yoann/Documents/1. Editing Projects/20. congo videos/well
+      lets try this again/1/intro_AME/2021 congo trip no rsmb.mp4
     playModeType: 0
   webcam:
     renderTextureLayer: 30

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
-using UnityEditor.Animations;
+
 
 
 public class AnimationHandler : MonoBehaviour
@@ -12,6 +12,8 @@ public class AnimationHandler : MonoBehaviour
     void awake()
     {
         AH = this;
+        GetClipTimes();
+        Debug.Log("non" + cliptime);
     }
 
     public PokemonBase Attacker;
@@ -21,24 +23,29 @@ public class AnimationHandler : MonoBehaviour
 
 
 
-    void GetClipTimes()
+    public void GetClipTimes()
     {
         AnimationClip[] Clips = Lucario.runtimeAnimatorController.animationClips;
 
         foreach (AnimationClip clip in Clips)
             if (!cliptime.ContainsKey(clip.name))
+            {
                 cliptime.Add(clip.name, clip.length);
+                Debug.Log(clip.name);
+            }
+
     }
     public void Attack(string attack)
     {
-        AttackAnimation(attack);
+        AttackAnimation(attack); Debug.Log("attack launched");
+
     }
     private IEnumerator AttackAnimation(string attack)
     {
         //set anim to true
-        Lucario.SetBool("Attacking", true);
-        yield return new WaitForSeconds(cliptime[attack]);
-        Lucario.SetBool("Attacking", false);
+        Lucario.SetBool("Attacking", true); Debug.Log("attack set to true");
+        yield return new WaitForSeconds(cliptime[attack]); Debug.Log("animation under way");
+        Lucario.SetBool("Attacking", false); Debug.Log("animation off");
     }
     public void run()
     {
