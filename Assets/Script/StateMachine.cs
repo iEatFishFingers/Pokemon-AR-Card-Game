@@ -277,6 +277,7 @@ public class StateMachine : MonoBehaviour
         {
             Canvas.gameObject.SetActive(false);
             state = GameState.Player1Won;
+            Lucario.SetBool("Dying", true);
             finishSeq();
         }
     }
