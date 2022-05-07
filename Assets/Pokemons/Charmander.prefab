@@ -138,6 +138,22 @@ MonoBehaviour:
   currATK: 30
   baseDEF: 30
   currDEF: 30
+  Attack1Name: 
+  Attack1Damage: 0
+  Attack1Points: 0
+  PokemonAttackType: 0
+  Attack2Name: 
+  Attack2Damage: 0
+  Attack2Points: 0
+  Pokemon2AttackType: 0
+  Attack3Name: 
+  Attack3Damage: 0
+  Attack3Points: 0
+  PokemonAttack3Type: 0
+  Attack4Name: 
+  Attack4Damage: 0
+  Attack4Points: 0
+  PokemonAttack4Type: 0
 --- !u!95 &-2331497835793112813
 Animator:
   serializedVersion: 3

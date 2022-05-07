@@ -11,6 +11,7 @@ public class StateMachine : MonoBehaviour
     public static StateMachine SM;
 
     public GameObject Canvas;
+    public GameObject RestartButton;
     //the two lines below will be used for transforming the pokemons
 
 
@@ -35,7 +36,7 @@ public class StateMachine : MonoBehaviour
     public Image Player2HealthBar;
 
     //gamestate 
-    public enum GameState { Start, Player1Turn, Player2Turn, Won, Loss }
+    public enum GameState { Start, Player1Turn, Player2Turn, Player1Won, Player2Won }
     public GameState state;
 
     bool Isp1Populated = false;
@@ -60,6 +61,7 @@ public class StateMachine : MonoBehaviour
     void Start()
     {
         Canvas.gameObject.SetActive(false);
+        RestartButton.gameObject.SetActive(false);
         DialogText.text = "Welcome to Pokemon AR";
         state = GameState.Start;
         Debug.Log("Game Started");
@@ -77,12 +79,32 @@ public class StateMachine : MonoBehaviour
 
     }
 
+    public void reset()
+    {
+        player1Stats.currATK = player1Stats.baseHP;
+        player1Stats.currDEF = player1Stats.baseDEF;
+        player1Stats.currHP = player1Stats.baseHP;
+        player1Stats.currHP = player1Stats.baseHP;
+        player1Stats.currMP = player1Stats.baseMP;
+
+
+        player2Stats.currATK = player2Stats.baseHP;
+        player2Stats.currDEF = player2Stats.baseDEF;
+        player2Stats.currHP = player2Stats.baseHP;
+        player2Stats.currHP = player2Stats.baseHP;
+        player2Stats.currMP = player2Stats.baseMP;
+        RestartButton.gameObject.SetActive(false);
+        BattleSetup();
+
+    }
+
     float calcPlayer1Health()
     {
         float percent = player1Stats.currHP / player1Stats.baseHP;
 
         return percent;
     }
+
     float calcPlayer2Health()
     {
         float percent = player2Stats.currHP / player2Stats.baseHP;
@@ -140,9 +162,12 @@ public class StateMachine : MonoBehaviour
     public void loadplayer2(PokemonBase stats)
     {
         player2Stats = stats;
+        Isp1Populated = true;
 
         Player2Name.text = stats.name;
         Player2HP.text = stats.baseHP + "/" + stats.baseHP;
+
+
         Debug.Log("the pokemon that loaded is" + stats.name);
         BattleSetup();
     }
@@ -178,14 +203,14 @@ public class StateMachine : MonoBehaviour
 
         if (state == GameState.Player1Turn)
         {
-            DialogText.text = "What will " + player1Stats.name + " do ?";
+            DialogText.text = "What will " + player2Stats.name + " do in response to " + player1Stats.name + "' attack?!";
             Debug.Log("Player 1 turn lauching attack");
             player1turn(attack);
 
         }
         else if (state == GameState.Player2Turn)
         {
-            DialogText.text = "What will " + player2Stats.name + " do ?";
+            DialogText.text = "What will " + player2Stats.name + " do in response to " + player1Stats.name + "' attack?!";
             player2turn(attack);
         }
         Debug.Log(state);
@@ -203,7 +228,7 @@ public class StateMachine : MonoBehaviour
                 Debug.Log(player1Stats.Attack1Name);
                 Attack(player1Stats.Attack1Name);
                 Debug.Log(player1Stats.Attack1Damage + " Damage Done ");
-                Debug.Log("current hp " + player2Stats.currHP);
+                Debug.Log(player2Stats.name + "'s current hp is " + player2Stats.currHP);
                 break;
             case 2:
                 //AnimationHandler.AH.run();
@@ -211,7 +236,7 @@ public class StateMachine : MonoBehaviour
                 player2Stats.currHP = player2Stats.currHP - player1Stats.Attack2Damage;
                 Attack(player1Stats.Attack2Name);
                 Debug.Log(player1Stats.Attack2Damage + " Damage Done ");
-                Debug.Log("current hp " + player2Stats.currHP);
+                Debug.Log(player2Stats.name + "'s current hp is " + player2Stats.currHP);
                 break;
             case 3:
                 //AnimationHandler.AH.run();
@@ -219,7 +244,7 @@ public class StateMachine : MonoBehaviour
                 player2Stats.currHP = player2Stats.currHP - player1Stats.Attack3Damage;
                 Attack(player1Stats.Attack3Name);
                 Debug.Log(player1Stats.Attack3Damage + " Damage Done ");
-                Debug.Log("current hp " + player2Stats.currHP);
+                Debug.Log(player2Stats.name + "'s current hp is " + player2Stats.currHP);
                 break;
             case 4:
                 //AnimationHandler.AH.run();
@@ -227,24 +252,42 @@ public class StateMachine : MonoBehaviour
                 player2Stats.currHP = player2Stats.currHP - player1Stats.Attack4Damage;
                 Attack(player1Stats.Attack4Name);
                 Debug.Log(player1Stats.Attack4Damage + " Damage Done ");
-                Debug.Log("current hp " + player2Stats.currHP);
+                Debug.Log(player2Stats.name + "'s current hp is " + player2Stats.currHP);
                 break;
         }
 
 
 
+        checkIfPlayersWon();
+        Debug.Log("It is now player 2's turn");
+        state = GameState.Player2Turn;
+        playerAttacks();
+    }
+
+    void checkIfPlayersWon()
+    {
+        if (player1Stats.currHP <= 0)
+        {
+            Canvas.gameObject.SetActive(false);
+            state = GameState.Player2Won;
+            finishSeq();
+        }
+
         if (player2Stats.currHP <= 0)
         {
             Canvas.gameObject.SetActive(false);
-            state = GameState.Won;
+            state = GameState.Player1Won;
+            finishSeq();
         }
-        else
-        {
-            state = GameState.Player2Turn;
-        }
-        Debug.Log("Damage done and player 2 turn on next hit");
-        Debug.Log(state);
-        playerAttacks();
+    }
+
+    void finishSeq()
+    {
+        // show the button
+        //add a possible animation
+        Debug.Log("....animation....");
+        Debug.Log("Would you like to play again with the same characters press the button");
+        RestartButton.gameObject.SetActive(true);
     }
 
     void player2turn(int attack)
@@ -258,41 +301,34 @@ public class StateMachine : MonoBehaviour
                 //AnimationHandler.AH.Attack(player2Stats.Attack1Name);
                 player1Stats.currHP = player1Stats.currHP - player2Stats.Attack1Damage;
                 Debug.Log(player2Stats.Attack1Damage + " Damage Done ");
-                Debug.Log("current hp " + player1Stats.currHP);
+                Debug.Log(player1Stats.name + "'s current hp is " + player1Stats.currHP);
                 break;
             case 2:
                 //AnimationHandler.AH.run();
                 //AnimationHandler.AH.Attack(player2Stats.Attack2Name);
                 player1Stats.currHP = player1Stats.currHP - player2Stats.Attack2Damage;
                 Debug.Log(player2Stats.Attack2Damage + " Damage Done ");
-                Debug.Log("current hp " + player1Stats.currHP);
+                Debug.Log(player1Stats.name + "'s current hp is " + player1Stats.currHP);
                 break;
             case 3:
                 //AnimationHandler.AH.run();
                 //AnimationHandler.AH.Attack(player1Stats.Attack3Name);
                 player1Stats.currHP = player1Stats.currHP - player2Stats.Attack3Damage;
                 Debug.Log(player2Stats.Attack3Damage + " Damage Done ");
-                Debug.Log("current hp " + player1Stats.currHP);
+                Debug.Log(player1Stats.name + "'s current hp is " + player1Stats.currHP);
                 break;
             case 4:
                 //AnimationHandler.AH.run();
                 //AnimationHandler.AH.Attack(player2Stats.Attack4Name);
                 player1Stats.currHP = player1Stats.currHP - player2Stats.Attack4Damage;
                 Debug.Log(player2Stats.Attack4Damage + " Damage Done ");
-                Debug.Log("current hp " + player1Stats.currHP);
+                Debug.Log(player1Stats.name + "'s current hp is " + player1Stats.currHP);
                 break;
         }
 
-        if (player1Stats.currHP <= 0)
-        {
-            state = GameState.Loss;
-            Canvas.gameObject.SetActive(false);
-        }
-        else
-        {
-            state = GameState.Player1Turn;
-        }
-        Debug.Log(state);
+        checkIfPlayersWon();
+        Debug.Log("It is now player 1's turn");
+        state = GameState.Player1Turn;
         playerAttacks();
     }
 
@@ -306,7 +342,8 @@ public class StateMachine : MonoBehaviour
             playerAtt4.text = player1Stats.Attack4Name;
             DialogText.text = "What will " + player1Stats.name + " do ?";
         }
-        else if (state == GameState.Player2Turn)
+
+        if (state == GameState.Player2Turn)
         {
             playerAtt1.text = player2Stats.Attack1Name;
             playerAtt2.text = player2Stats.Attack2Name;
@@ -314,13 +351,16 @@ public class StateMachine : MonoBehaviour
             playerAtt4.text = player2Stats.Attack4Name;
             DialogText.text = "What will " + player2Stats.name + " do ?";
         }
+        Debug.Log(state);
     }
 
     public void Attack(string attack)
     {
         Canvas.gameObject.SetActive(false);
         StartCoroutine(AttackAnimation(attack)); Debug.Log("attack launched");
+
     }
+
     IEnumerator AttackAnimation(string attack)
     {
         //set anim to true
@@ -328,6 +368,7 @@ public class StateMachine : MonoBehaviour
         yield return new WaitForSeconds(4); Debug.Log("animation under way");
         Lucario.SetBool(attack, false); Debug.Log("animation off");
         Canvas.gameObject.SetActive(true);
+
     }
 }
 
