@@ -42,6 +42,8 @@ public class StateMachine : MonoBehaviour
     bool Isp1Populated = false;
 
     public Animator Lucario;
+
+    public Animator Charmander;
     public Dictionary<string, float> cliptime;
 
     public void GetClipTimes()
@@ -222,8 +224,6 @@ public class StateMachine : MonoBehaviour
         switch (attack)
         {
             case 1:
-                //AnimationHandler.AH.run();
-                //Attack(player1Stats.Attack1Name);
                 player2Stats.currHP = player2Stats.currHP - player1Stats.Attack1Damage;
                 Debug.Log(player1Stats.Attack1Name);
                 Attack(player1Stats.Attack1Name);
@@ -231,24 +231,19 @@ public class StateMachine : MonoBehaviour
                 Debug.Log(player2Stats.name + "'s current hp is " + player2Stats.currHP);
                 break;
             case 2:
-                //AnimationHandler.AH.run();
-                //AnimationHandler.AH.Attack(player1Stats.Attack2Name);
                 player2Stats.currHP = player2Stats.currHP - player1Stats.Attack2Damage;
                 Attack(player1Stats.Attack2Name);
                 Debug.Log(player1Stats.Attack2Damage + " Damage Done ");
                 Debug.Log(player2Stats.name + "'s current hp is " + player2Stats.currHP);
                 break;
             case 3:
-                //AnimationHandler.AH.run();
-                //AnimationHandler.AH.Attack(player1Stats.Attack3Name);
                 player2Stats.currHP = player2Stats.currHP - player1Stats.Attack3Damage;
                 Attack(player1Stats.Attack3Name);
                 Debug.Log(player1Stats.Attack3Damage + " Damage Done ");
                 Debug.Log(player2Stats.name + "'s current hp is " + player2Stats.currHP);
                 break;
             case 4:
-                //AnimationHandler.AH.run();
-                //AnimationHandler.AH.Attack(player1Stats.Attack4Name);
+
                 player2Stats.currHP = player2Stats.currHP - player1Stats.Attack4Damage;
                 Attack(player1Stats.Attack4Name);
                 Debug.Log(player1Stats.Attack4Damage + " Damage Done ");
@@ -301,6 +296,7 @@ public class StateMachine : MonoBehaviour
                 //AnimationHandler.AH.run();
                 //AnimationHandler.AH.Attack(player2Stats.Attack1Name);
                 player1Stats.currHP = player1Stats.currHP - player2Stats.Attack1Damage;
+                Attack(player2Stats.Attack1Name);
                 Debug.Log(player2Stats.Attack1Damage + " Damage Done ");
                 Debug.Log(player1Stats.name + "'s current hp is " + player1Stats.currHP);
                 break;
@@ -365,10 +361,21 @@ public class StateMachine : MonoBehaviour
     IEnumerator AttackAnimation(string attack)
     {
         //set anim to true
-        Lucario.SetBool(attack, true); Debug.Log("attack set to true");
-        yield return new WaitForSeconds(4); Debug.Log("animation under way");
-        Lucario.SetBool(attack, false); Debug.Log("animation off");
-        Canvas.gameObject.SetActive(true);
+        if (state == GameState.Player1Turn)
+        {
+            Lucario.SetBool(attack, true); Debug.Log("attack set to true");
+            yield return new WaitForSeconds(4); Debug.Log("animation under way");
+            Lucario.SetBool(attack, false); Debug.Log("animation off");
+            Canvas.gameObject.SetActive(true);
+        }
+        else if (state == GameState.Player2Turn)
+        {
+            Charmander.SetBool(attack, true); Debug.Log("attack set to true");
+            yield return new WaitForSeconds(4); Debug.Log("animation under way");
+            Lucario.SetBool(attack, false); Debug.Log("animation off");
+            Canvas.gameObject.SetActive(true);
+        }
+
 
     }
 }

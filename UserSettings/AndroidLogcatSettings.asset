@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "5ed30b6",
         "name": "com.DefaultCompany.VuforiaVersionPokemonAR",
-        "processId": 1091,
+        "processId": 20948,
         "exited": false
     },
     "m_SelectedPriority": 1,
@@ -444,6 +444,12 @@
             "deviceId": "5ed30b6",
             "name": "com.DefaultCompany.VuforiaVersionPokemonAR",
             "processId": 1091,
+            "exited": false
+        },
+        {
+            "deviceId": "5ed30b6",
+            "name": "com.DefaultCompany.VuforiaVersionPokemonAR",
+            "processId": 20948,
             "exited": false
         }
     ],
