@@ -244,10 +244,10 @@ public class StateMachine : MonoBehaviour
                 break;
             case 4:
 
-                player2Stats.currHP = player2Stats.currHP - player1Stats.Attack4Damage;
-                Attack(player1Stats.Attack4Name);
-                Debug.Log(player1Stats.Attack4Damage + " Damage Done ");
-                Debug.Log(player2Stats.name + "'s current hp is " + player2Stats.currHP);
+                player1Stats.currHP = player1Stats.currHP + player1Stats.Attack4Damage;
+                //Attack(player1Stats.Attack4Name);
+                Debug.Log(player1Stats.Attack4Damage + " Healed ");
+                //Debug.Log(player2Stats.name + "'s current hp is " + player2Stats.currHP);
                 break;
         }
 
@@ -317,9 +317,9 @@ public class StateMachine : MonoBehaviour
             case 4:
                 //AnimationHandler.AH.run();
                 //AnimationHandler.AH.Attack(player2Stats.Attack4Name);
-                player1Stats.currHP = player1Stats.currHP - player2Stats.Attack4Damage;
-                Debug.Log(player2Stats.Attack4Damage + " Damage Done ");
-                Debug.Log(player1Stats.name + "'s current hp is " + player1Stats.currHP);
+                player2Stats.currHP = player2Stats.currHP + player2Stats.Attack4Damage;
+                Debug.Log(player2Stats.Attack4Damage + " Healing Done ");
+                // Debug.Log(player1Stats.name + "'s current hp is " + player1Stats.currHP);
                 break;
         }
 
