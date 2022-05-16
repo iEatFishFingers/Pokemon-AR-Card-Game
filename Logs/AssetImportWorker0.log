@@ -430,3 +430,4 @@ Received Import Request.
 Start importing Assets/Script/StateMachine.cs using Guid(7ee3842cb6260eb40a9295a5cdd87b87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e17403caa33d68f01143c6219f0e991') in 0.006583 seconds 
   Import took 0.009834 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
